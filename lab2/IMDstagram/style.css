@@ -1,0 +1,4 @@
+nav.ui {
+    display: flex;
+    flex-direction: row;
+}
