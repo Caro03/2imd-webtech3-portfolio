@@ -1,1 +1,0 @@
-[Link to portfolio](https://github.com/BramTheunis/2imd-webtech3-portfolio)
