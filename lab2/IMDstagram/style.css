@@ -28,4 +28,9 @@
         align-items: center;
         justify-items: center;
     }
+
+    .ui {
+        display: flex;
+        
+    }
 }
