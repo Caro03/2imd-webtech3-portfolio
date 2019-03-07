@@ -13,8 +13,18 @@ section.photos {
     align-items: center;
 }
 
-.navigatie {
+.nav1 {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap-reverse;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 35em) {
+    body {
+        background-color: blueviolet;
+    }
 }
