@@ -15,7 +15,8 @@ section.photos {
     align-content: center;
 }
 
-nav {
+nav ul li {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
 }
