@@ -10,36 +10,37 @@ section.photos {
     align-content: center;
 }
 
-.header {
+nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 
-.nav1 {
+nav li {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    flex: 1 1 0%;
+    align-content: center;
+    align-items: center;
+    flex: 0 0 100%;
 }
 
-.logo {
+nav ul li h2 {
     display: flex;
+    justify-content: center;
 }
 
-.typography {
-    display: flex;
-}
+@media (min-width: 500px) {
+    body {
+        background-color: aquamarine;
+    }
 
-.ui {
-    display: flex;
-}
+    nav li {
+        display: flex;
+    }
 
-.branding {
-    display: flex;
-}
-
-.graffiti {
-    display: flex;
+    nav li {
+        display: flex;
+    }
 }
