@@ -1,7 +1,8 @@
 class Note {
   constructor(title) {
     this.title = title;
-    // HINT🤩 this.element = this.createElement(title);
+    // HINT🤩 
+    this.element = this.createElement(title);
   }
   
   createElement(title){
@@ -15,6 +16,11 @@ class Note {
   add(){
     // HINT🤩
     // this function should append the note to the screen somehow
+    let Post = (note) => {
+      this.note = document.querySelector("#txtAddNote");
+      console.log(this.note);
+    }
+
   }
   
   saveToStorage(){
@@ -32,6 +38,8 @@ class Note {
 class App {
   constructor() {
     console.log("👊🏼 The Constructor!");
+    this.btnAdd = document.querySelector("#btnAddNote");
+    this.btnAdd.addEventListener("click", this.createNote.bind(this));
   
     // HINT🤩
     // clicking the button should work
