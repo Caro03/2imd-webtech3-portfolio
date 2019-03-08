@@ -8,6 +8,7 @@ section.photos {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+    flex-grow: 500px;
 }
 
 nav ul {
@@ -32,15 +33,28 @@ nav ul li h2 {
 }
 
 @media (min-width: 500px) {
-    body {
-        background-color: aquamarine;
-    }
 
     nav li {
         display: flex;
     }
 
-    nav li {
+    .nav-links {
+        display: flex;
+    }
+}
+
+@media (min-width: 550px) {
+
+    nav ul li {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-rechts {
+        display: flex;
+    }
+
+    .nav-links {
         display: flex;
     }
 }
