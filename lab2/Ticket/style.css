@@ -5,7 +5,7 @@
 body {
     display: grid;
     grid-template-rows: 1fr 3fr 0.5fr 0.5fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2.5fr 2.5fr;
 }
 
 .header {
@@ -38,29 +38,28 @@ img.foto {
     display: grid;
     grid-row: 3 / 4;
     grid-column: 1 / 2;
-    border: 1px solid black;
     text-align: center;
+    letter-spacing: 4px;
 }
 
 .admit {
     display: grid;
     grid-row-start: 3;
     grid-column: 2 / 3;
-    border: 1px solid black;
-    text-align: center;
+    letter-spacing: 4px;
 }
 
 .kader {
     display: grid;
-    justify-items: center;
+    text-align: center;
 }
 
 .price {
     display: grid;
     grid-row-start: 4;
     grid-column: 1 / 3;
-    border: 1px solid black;
     text-align: center;
+    letter-spacing: 4px;
 }
 
 .text {
@@ -104,6 +103,7 @@ img.foto {
         grid-row: 2 / 3;
         grid-column: 1 / 2;
         align-content: center;
+        border: none;
     }
 
     .admit {
@@ -111,6 +111,7 @@ img.foto {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
         align-content: center;
+        border: none;
     }
 
     .price {
@@ -118,14 +119,15 @@ img.foto {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
         align-content: center;
+        border: none;
     }
 
     .text {
         display: grid;
         grid-row: 3 / 4;
         grid-column: 1 / 4;
-        border: 1px solid black;
         align-content: center;
         justify-content: center;
+        letter-spacing: 2px;
     }
 }
