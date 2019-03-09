@@ -1,0 +1,28 @@
+* {
+    -webkit-box-sizing: border-box;
+}
+
+.body {
+    display: grid;
+    grid-template-rows: 2fr 4fr 1fr 1fr;
+}
+
+.header {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: black;
+    color: white;
+    justify-items: center;
+}
+
+.foto {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    justify-items: center;
+}
+
+.text {
+    display: none;
+}
