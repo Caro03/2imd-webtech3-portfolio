@@ -2,7 +2,7 @@
 
 [Link naar lab 1](https://github.com/Caro03/2imd-webtech3-portfolio/tree/master/lab1%20-%20git)
 
-(https://github.com/Caro03/2imd-webtech3-portfolio/blob/master/lab1%20-%20git/git-it.png?raw=true)
+![Foto tutorial git-it](/2IMD-WEBTECH-PORTFOLIO/lab1 - git/git-it.png)
 
 # Lab 2 #
 
