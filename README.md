@@ -2,8 +2,6 @@
 
 [Link naar lab 1](https://github.com/Caro03/2imd-webtech3-portfolio/tree/master/lab1%20-%20git)
 
-![Foto tutorial git-it](/2IMD-WEBTECH-PORTFOLIO/lab1 - git/git-it.png)
-
 # Lab 2 #
 
 [Link naar lab 2](https://github.com/Caro03/2imd-webtech3-portfolio/tree/master/lab2)
