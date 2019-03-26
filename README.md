@@ -12,3 +12,7 @@
 # Lab 3 #
 
 [Link naar lab 3](https://github.com/Caro03/2imd-webtech3-portfolio/tree/master/lab3)
+
+# Lab 4 #
+
+[Link naar lab 4](https://github.com/Caro03/2imd-webtech3-portfolio/tree/master/lab4)
