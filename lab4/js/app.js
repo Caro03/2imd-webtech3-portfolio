@@ -48,7 +48,7 @@ class Photo {
     }
 
     getMyPhoto() {
-        let url = 
+        let url = ``;
     }
 }
 
