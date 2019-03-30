@@ -32,17 +32,17 @@ class Weather {
                 document.querySelector("body").appendChild(temp);
             });
     }
-    getYoga() {
-        let url = `https://raw.githubusercontent.com/rebeccaestes/yoga_api/master/yoga_api.json`;
+    getPhoto() {
+        let url = `https://api.unsplash.com/photos/random?count=1`;
         fetch(url)
-        .then(respose => {
-            return respose.json();
-        })
-        .then(json => {
-            let random = Math.floor((Math.random() * 48));
-            let name = document.createElement("h2");
-            document.querySelector("body").appendChild(name);
-        });
+            .then(response => {
+                return response.json();
+            }) 
+            .then(json => {
+                let photo = document.createElement("div");
+                document.querySelector("body").appendChild(photo);
+                console.log("hi");
+            });
     }
 }
 
