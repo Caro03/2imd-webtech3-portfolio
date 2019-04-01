@@ -1,6 +1,7 @@
 class Weather {
-    constructor(API_KEY) {
+    constructor(API_KEY, API_PIC) {
         this.API_KEY = API_KEY;
+        this.API_PIC = API_PIC;
         console.log("hello");
         this.initialize();
     }
@@ -21,7 +22,7 @@ class Weather {
     }
 
     getWeather(lat, lng) {
-        let url = `//cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${this.API_KEY}/${lat},${lng}?units=si`;
+        let url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${this.API_KEY}/${lat},${lng}?units=si`;
         fetch(url)
             .then(response => {
                 return response.json();
@@ -29,22 +30,24 @@ class Weather {
             .then(json => {
                 let temp = document.createElement("h1");
                 temp.innerHTML = json.currently.summary;
-                document.querySelector("body").appendChild(temp);
+                document.querySelector(".weather").appendChild(temp);
             });
     }
-    getPhoto() {
-        let url = `https://api.unsplash.com/photos/random?count=1`;
+
+    getPic(picture) {
+        let url = `https://cors-anywhere.herokuapp.com/https://pixabay.com/api/${this.API_PIC}/?q=${picture}&image_type=photo&category=nature`;
         fetch(url)
             .then(response => {
                 return response.json();
             }) 
             .then(json => {
-                let photo = document.createElement("div");
-                document.querySelector("body").appendChild(photo);
-                console.log("hi");
+                let random = Math.floor(Math.random() * 10);
+                // afbeelding heeft nu een groote van 250 * 250px
+                let randomPic = json.hits[random].userImageURL;
+                document.querySelector(".image").setAttribute("src", randomPic);
             });
     }
 }
 
 
-let app = new Weather('3766c6dfc2af358482b42e03a0548277');
+let app = new Weather('3766c6dfc2af358482b42e03a0548277', '11991618-dc6ef88e6d4550cf854071bb3');
