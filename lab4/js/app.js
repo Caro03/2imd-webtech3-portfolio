@@ -15,7 +15,9 @@ class Weather {
         navigator.geolocation.getCurrentPosition(position => {  
             let lat = position.coords.latitude;
             let lng = position.coords.longitude;
+            let picture;
             this.getWeather(lat, lng);
+            this.getPic(picture);
         }, err => {
             console.log(err);
         });
@@ -35,7 +37,8 @@ class Weather {
     }
 
     getPic(picture) {
-        let url = `https://cors-anywhere.herokuapp.com/https://pixabay.com/api/${this.API_PIC}/?q=${picture}&image_type=photo&category=nature`;
+        console.log("hi");
+        let url = `https://cors-anywhere.herokuapp.com/https://pixabay.com/api/?key=11991618-dc6ef88e6d4550cf854071bb3&image_type=photo&category=nature`;
         fetch(url)
             .then(response => {
                 return response.json();
@@ -44,6 +47,7 @@ class Weather {
                 let random = Math.floor(Math.random() * 10);
                 // afbeelding heeft nu een groote van 250 * 250px
                 let randomPic = json.hits[random].userImageURL;
+                let picture = json.hits[random].imageURL;
                 document.querySelector(".image").setAttribute("src", randomPic);
             });
     }
