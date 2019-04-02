@@ -1,4 +1,23 @@
 .image {
+    display: block;
     width: 200px;
     height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.weather {
+  font-family: 'Quicksand';
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+}
+
+.bg {
+  width: 250px;
+  height: 350px;
+  background-color: black;
+  border-radius: 20px;
 }

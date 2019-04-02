@@ -32,7 +32,7 @@ class Weather {
             .then(json => {
                 let temp = document.createElement("h1");
                 temp.innerHTML = json.currently.summary;
-                document.getElementById('weather').style.color = 'black';
+                //document.getElementById('weather').style.color = 'black';
                 document.querySelector(".weather").appendChild(temp);
             });
     }
@@ -49,7 +49,7 @@ class Weather {
             .then(json => {
                 console.log(json);
                 let random = Math.floor(Math.random() * 10);
-                // afbeelding heeft nu een groote van 250 * 250px
+                // hier wordt een random picture gekozen uit largeImageURL
                 let picture = json.hits[random].largeImageURL;
                 document.querySelector(".image").setAttribute("src", picture);
             });
